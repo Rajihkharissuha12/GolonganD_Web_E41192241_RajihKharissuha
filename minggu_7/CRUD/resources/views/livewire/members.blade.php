@@ -28,6 +28,7 @@
                         <th class="px-4 py-2">Nama</th>
                         <th class="px-4 py-2">Email</th>
                         <th class="px-4 py-2">Telp</th>
+                        <th class="px-4 py-2">Action</th>
                         <!-- <th class="px-4 py-2 w-20">Status</th> -->
                     </tr>
                 </thead>
