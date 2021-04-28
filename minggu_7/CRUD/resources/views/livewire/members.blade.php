@@ -28,7 +28,7 @@
                         <th class="px-4 py-2">Nama</th>
                         <th class="px-4 py-2">Email</th>
                         <th class="px-4 py-2">Telp</th>
-                        <th class="px-4 py-2 w-20">Status</th>
+                        <!-- <th class="px-4 py-2 w-20">Status</th> -->
                     </tr>
                 </thead>
                 <tbody>
@@ -37,7 +37,7 @@
                             <td class="border px-4 py-2">{{ $row->name }}</td>
                             <td class="border px-4 py-2">{{ $row->email }}</td>
                             <td class="border px-4 py-2">{{ $row->phone_number }}</td>
-                            <td class="border px-4 py-2">{!! $row->status_label !!}</td>
+                            <!-- <td class="border px-4 py-2">{!! $row->status_label !!}</td> -->
                             <td class="border px-4 py-2">
                                 <button wire:click="edit({{ $row->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit</button>
                                 <button wire:click="delete({{ $row->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Hapus</button>

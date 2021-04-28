@@ -8,7 +8,7 @@ use App\Models\Member;
 class Members extends Component
 {
 
-    public $members, $name, $email, $phone_number, $status, $member_id;
+    public $members, $name, $email, $phone_number, $member_id;
 
     public $isModal;
 
@@ -29,7 +29,7 @@ class Members extends Component
         $this->name = '';
         $this->email = '';
         $this->phone_number = '';
-        $this->status = '';
+        // $this->status = '';
         $this->member_id = '';
     }
 
@@ -50,7 +50,7 @@ class Members extends Component
             'name' => 'required|string',
             'email' => 'required|email|unique:members,email,' . $this->member_id,
             'phone_number' => 'required|numeric',
-            'status' => 'required'
+            // 'status' => 'required'
         ]);
 
         Member::updateOrCreate(
@@ -59,7 +59,7 @@ class Members extends Component
                 'name' => $this->name,
                 'email' => $this->email,
                 'phone_number' => $this->phone_number,
-                'status' => $this->status
+                // 'status' => $this->status
             ]   
             );
 
@@ -75,7 +75,7 @@ class Members extends Component
         $this->name = $member->name;
         $this->email = $member->email;
         $this->phone_number = $member->phone_number;
-        $this->status = $member->status;
+        // $this->status = $member->status;
 
         $this->openModal();
     }

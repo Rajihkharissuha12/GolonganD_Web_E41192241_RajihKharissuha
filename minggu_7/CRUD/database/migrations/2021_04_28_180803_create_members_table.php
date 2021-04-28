@@ -18,7 +18,6 @@ class CreateMembersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('phone_number', 15);
-            $table->char('status', 1);
             $table->timestamps();
         });
     }
